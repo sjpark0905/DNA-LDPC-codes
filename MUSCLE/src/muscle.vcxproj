@@ -1,0 +1,406 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{57FBAB99-B961-4B38-B846-CA26D63384F2}</ProjectGuid>
+    <RootNamespace>muscle</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>muscle</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC70.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC70.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC70.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC70.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Debug\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Release\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <PreBuildEvent>
+      <Message>SVN version</Message>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_WIN32_WINNT=0x0400;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>psapi.lib;user32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)muscle.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)muscle.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <PreBuildEvent>
+      <Message>gitver</Message>
+      <Command>gitver.bat</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_WIN32_WINNT=0x0400;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <OpenMPSupport>true</OpenMPSupport>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>psapi.lib;user32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)muscle.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)muscle.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <PreBuildEvent>
+      <Message>SVN version</Message>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <OmitFramePointers>true</OmitFramePointers>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_WIN32_WINNT=0x0400;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>psapi.lib;user32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)muscle.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <PreBuildEvent>
+      <Message>gitver</Message>
+      <Command>gitver.bat</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <OmitFramePointers>true</OmitFramePointers>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_WIN32_WINNT=0x0400;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <OpenMPSupport>true</OpenMPSupport>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>psapi.lib;user32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)muscle.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="addconfseq.cpp" />
+    <ClCompile Include="align.cpp" />
+    <ClCompile Include="alignpairflat.cpp" />
+    <ClCompile Include="allocflat.cpp" />
+    <ClCompile Include="alnalnsflat.cpp" />
+    <ClCompile Include="alnmsasflat.cpp" />
+    <ClCompile Include="alnmsasflat3.cpp" />
+    <ClCompile Include="alpha.cpp" />
+    <ClCompile Include="alpha3.cpp" />
+    <ClCompile Include="assertsameseqs.cpp" />
+    <ClCompile Include="calcalnscoresparse.cpp" />
+    <ClCompile Include="eesort.cpp" />
+    <ClCompile Include="heatmapcolors.cpp" />
+    <ClCompile Include="jalview.cpp" />
+    <ClCompile Include="letterconf.cpp" />
+    <ClCompile Include="diagbox.cpp" />
+    <ClCompile Include="buildposterior3flat.cpp" />
+    <ClCompile Include="buildpostflat.cpp" />
+    <ClCompile Include="bwdflat3.cpp" />
+    <ClCompile Include="calcalnflat.cpp" />
+    <ClCompile Include="calcalnscoreflat.cpp" />
+    <ClCompile Include="calcposteriorflat.cpp" />
+    <ClCompile Include="conspairflat.cpp" />
+    <ClCompile Include="consflat.cpp" />
+    <ClCompile Include="defaulthmmparams.cpp" />
+    <ClCompile Include="derep.cpp" />
+    <ClCompile Include="disperse.cpp" />
+    <ClCompile Include="dividetree.cpp" />
+    <ClCompile Include="eacluster.cpp" />
+    <ClCompile Include="efabestcols.cpp" />
+    <ClCompile Include="efabestconf.cpp" />
+    <ClCompile Include="efaexplode.cpp" />
+    <ClCompile Include="efastats.cpp" />
+    <ClCompile Include="ensemble.cpp" />
+    <ClCompile Include="fa2efa.cpp" />
+    <ClCompile Include="fwdflat3.cpp" />
+    <ClCompile Include="getpairs.cpp" />
+    <ClCompile Include="getpostpairsalignedflat.cpp" />
+    <ClCompile Include="help.cpp" />
+    <ClCompile Include="letterconfhtml.cpp" />
+    <ClCompile Include="logdistmx.cpp" />
+    <ClCompile Include="logmx.cpp" />
+    <ClCompile Include="make_a2m.cpp" />
+    <ClCompile Include="maxcc.cpp" />
+    <ClCompile Include="mpcflat.cpp" />
+    <ClCompile Include="eadistmx.cpp" />
+    <ClCompile Include="eadistmxmsas.cpp" />
+    <ClCompile Include="fasta.cpp" />
+    <ClCompile Include="fasta2.cpp" />
+    <ClCompile Include="mysparsemx.cpp" />
+    <ClCompile Include="perturbhmm.cpp" />
+    <ClCompile Include="getconsseq.cpp" />
+    <ClCompile Include="globalinputms.cpp" />
+    <ClCompile Include="guidetreejoinorder.cpp" />
+    <ClCompile Include="hmmdump.cpp" />
+    <ClCompile Include="hmmparams.cpp" />
+    <ClCompile Include="jointrees.cpp" />
+    <ClCompile Include="logaln.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="msastats.cpp" />
+    <ClCompile Include="multisequence.cpp" />
+    <ClCompile Include="permutetree.cpp" />
+    <ClCompile Include="pprog.cpp" />
+    <ClCompile Include="pprog2.cpp" />
+    <ClCompile Include="pprogt.cpp" />
+    <ClCompile Include="probcons.cpp" />
+    <ClCompile Include="msa.cpp" />
+    <ClCompile Include="msa2.cpp" />
+    <ClCompile Include="myutils.cpp" />
+    <ClCompile Include="colscoreefa.cpp" />
+    <ClCompile Include="qscoreefa.cpp" />
+    <ClCompile Include="randomchaintree.cpp" />
+    <ClCompile Include="relabel.cpp" />
+    <ClCompile Include="resample.cpp" />
+    <ClCompile Include="stripgappyrows.cpp" />
+    <ClCompile Include="tree.cpp" />
+    <ClCompile Include="tree2.cpp" />
+    <ClCompile Include="tree4.cpp" />
+    <ClCompile Include="treefromfile.cpp" />
+    <ClCompile Include="treetofile.cpp" />
+    <ClCompile Include="pairhmm.cpp" />
+    <ClCompile Include="progalnflat.cpp" />
+    <ClCompile Include="project.cpp" />
+    <ClCompile Include="qscore.cpp" />
+    <ClCompile Include="qscore2.cpp" />
+    <ClCompile Include="qscorer.cpp" />
+    <ClCompile Include="quarts.cpp" />
+    <ClCompile Include="refineflat.cpp" />
+    <ClCompile Include="relaxflat.cpp" />
+    <ClCompile Include="seb8.cpp" />
+    <ClCompile Include="sequence.cpp" />
+    <ClCompile Include="setprobconsparams.cpp" />
+    <ClCompile Include="seq.cpp" />
+    <ClCompile Include="stripgappycols.cpp" />
+    <ClCompile Include="super4.cpp" />
+    <ClCompile Include="super5.cpp" />
+    <ClCompile Include="testfb.cpp" />
+    <ClCompile Include="testlog.cpp" />
+    <ClCompile Include="testscoretype.cpp" />
+    <ClCompile Include="textfile.cpp" />
+    <ClCompile Include="totalprobflat.cpp" />
+    <ClCompile Include="tracebackflat.cpp" />
+    <ClCompile Include="transaln.cpp" />
+    <ClCompile Include="transq.cpp" />
+    <ClCompile Include="treeperm.cpp" />
+    <ClCompile Include="treesplitter.cpp" />
+    <ClCompile Include="treesubsetnodes.cpp" />
+    <ClCompile Include="trimtoref.cpp" />
+    <ClCompile Include="trimtorefefa.cpp" />
+    <ClCompile Include="uclust.cpp" />
+    <ClCompile Include="upgma5.cpp" />
+    <ClCompile Include="usage.cpp" />
+    <ClCompile Include="usorter.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="alpha.h" />
+    <ClInclude Include="alpha3.h" />
+    <ClInclude Include="best3.h" />
+    <ClInclude Include="chainer.h" />
+    <ClInclude Include="clust.h" />
+    <ClInclude Include="cluster.h" />
+    <ClInclude Include="clustsetdf.h" />
+    <ClInclude Include="clustsetmsa.h" />
+    <ClInclude Include="cmds.h" />
+    <ClInclude Include="cmptom.h" />
+    <ClInclude Include="consts.h" />
+    <ClInclude Include="countsort.h" />
+    <ClInclude Include="derep.h" />
+    <ClInclude Include="diagbox.h" />
+    <ClInclude Include="distcalc.h" />
+    <ClInclude Include="dpregionlist.h" />
+    <ClInclude Include="dpreglist.h" />
+    <ClInclude Include="eacluster.h" />
+    <ClInclude Include="edgelist.h" />
+    <ClInclude Include="ensemble.h" />
+    <ClInclude Include="enumopts.h" />
+    <ClInclude Include="estring.h" />
+    <ClInclude Include="filebuffer.h" />
+    <ClInclude Include="flatmx.h" />
+    <ClInclude Include="gapscoredimer.h" />
+    <ClInclude Include="gobuff.h" />
+    <ClInclude Include="gonnet.h" />
+    <ClInclude Include="heatmapcolors.h" />
+    <ClInclude Include="hmmparams.h" />
+    <ClInclude Include="hmmscores.h" />
+    <ClInclude Include="hmmtrans.h" />
+    <ClInclude Include="intmath.h" />
+    <ClInclude Include="kmerscan.h" />
+    <ClInclude Include="locallock.h" />
+    <ClInclude Include="mpc.h" />
+    <ClInclude Include="mpcflat.h" />
+    <ClInclude Include="msa.h" />
+    <ClInclude Include="multisequence.h" />
+    <ClInclude Include="muscle.h" />
+    <ClInclude Include="myopts.h" />
+    <ClInclude Include="mysparsemx.h" />
+    <ClInclude Include="myutils.h" />
+    <ClInclude Include="objscore.h" />
+    <ClInclude Include="pairhmm.h" />
+    <ClInclude Include="params.h" />
+    <ClInclude Include="pprog.h" />
+    <ClInclude Include="probcons.h" />
+    <ClInclude Include="profile.h" />
+    <ClInclude Include="pwpath.h" />
+    <ClInclude Include="qscorer.h" />
+    <ClInclude Include="qscorer3.h" />
+    <ClInclude Include="quarts.h" />
+    <ClInclude Include="scorehistory.h" />
+    <ClInclude Include="scoretype.h" />
+    <ClInclude Include="seq.h" />
+    <ClInclude Include="sequence.h" />
+    <ClInclude Include="six.h" />
+    <ClInclude Include="sort.h" />
+    <ClInclude Include="sparsematrix.h" />
+    <ClInclude Include="sparsemx.h" />
+    <ClInclude Include="super4.h" />
+    <ClInclude Include="super5.h" />
+    <ClInclude Include="textfile.h" />
+    <ClInclude Include="timing.h" />
+    <ClInclude Include="transaln.h" />
+    <ClInclude Include="tree.h" />
+    <ClInclude Include="treeperm.h" />
+    <ClInclude Include="treesplitter.h" />
+    <ClInclude Include="types.h" />
+    <ClInclude Include="uclust.h" />
+    <ClInclude Include="unixio.h" />
+    <ClInclude Include="upgma5.h" />
+    <ClInclude Include="usage.h" />
+    <ClInclude Include="usorter.h" />
+    <ClInclude Include="hspfinder.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="usage.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
