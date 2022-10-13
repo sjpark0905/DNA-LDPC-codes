@@ -1,0 +1,8 @@
+﻿  make_alist.cpp
+C:\성준\CCL\LDPC\RS_LDPC\RS_LDPC\make_alist.cpp(25,1): warning C4996:  'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1774): message :  'sprintf' 선언을 참조하십시오.
+C:\성준\CCL\LDPC\RS_LDPC\RS_LDPC\make_alist.cpp(27,1): warning C4996:  'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(208): message :  'fopen' 선언을 참조하십시오.
+C:\성준\CCL\LDPC\RS_LDPC\RS_LDPC\make_alist.cpp(5,26): warning C4101:  'k' :참조되지 않은 지역 변수입니다.
+C:\성준\CCL\LDPC\RS_LDPC\RS_LDPC\make_alist.cpp(5,29): warning C4101:  'n' :참조되지 않은 지역 변수입니다.
+  RS_LDPC.vcxproj -> C:\성준\CCL\LDPC\RS_LDPC\Debug\RS_LDPC.exe
