@@ -1,5 +1,6 @@
 # DNA-LDPC-codes
-DNA LDPC codes
+
+This repository is the implementation of *Efficient Algorithms from Soft-Deicison Decoding of LDPC Codes for Reducing Costs in DNA-based Data Storage* (S.-J Park *et al.* (2022))
 
 
 Thanks to libraries we used in this work..
