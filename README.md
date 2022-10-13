@@ -2,7 +2,7 @@
 DNA LDPC codes
 
 
-We use several libraries in this work.
+Thanks to libraries we used in this work..
 
 
 * ***LDPC***: Library for encoding and decoding are used. It is available in https://github.com/radfordneal/LDPC-codes.  
