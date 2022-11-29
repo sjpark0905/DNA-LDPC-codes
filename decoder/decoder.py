@@ -53,15 +53,8 @@ for iter_num2 in range(start,end):
         RS_seq = file_read(RS_file,str)
         RS_qual = file_read(RS_file_qual,str)
     else:
-        print("************** Create new random sampling file! **************")
-        time_RS = time.time()
-        print('Reading FASTQ files')
-        x = Fastq('test')
-        RS_index = sorted(random.sample(range(len(x.seq)), RS))
-        for i in range(len(RS_index)):
-            RS_seq.append(x.seq[RS_index[i]])
-        write_val(RS_file, RS_seq)
-        print("Read Fastq & Random sampling time:", time.time()-time_RS,"sec")
+        print("************** No random sampling file! **************")
+        break
     
     for i in range(len(RS_seq)):
         index.append(RS_seq[i][0:16])
@@ -71,10 +64,10 @@ for iter_num2 in range(start,end):
     write_val('index',index_binary)
     
     
-    with open('test.bat', 'w') as f:
+    with open('RS_decoder.bat', 'w') as f:
         bat = "rs_dec"
         f.write(bat)
-    os.system('test.bat')
+    os.system('RS_decoder.bat')
     
     print('RS decoding finished')
     print("RS decoding time:", time.time()-time_RS_dec,"sec")
@@ -564,8 +557,8 @@ for iter_num2 in range(start,end):
         codeword_file = "codeword_n18432_m1860_%d" % i
         dec_file = "dec_codeword_n18432_m1860_%d" % i
         soft_input = "soft%d_n18432_m1860_%d" % (RS,i)
-        write_bat("test.bat",soft_input,i)
-        os.system('test.bat')
+        write_bat("soft_decoder.bat",soft_input,i)
+        os.system('soft_decoder.bat')
         
         dec_input = file_read(soft_input,float)
         dec_output = file_read(dec_file,int)
@@ -642,8 +635,8 @@ for iter_num2 in range(start,end):
             codeword_file = "codeword_n18432_m1860_%d" % i
             dec_file = "dec_codeword_n18432_m1860_%d" % i
             soft_input = "re_soft%d_n18432_m1860_%d" % (RS,i)
-            write_bat("test.bat",soft_input,i)
-            os.system('test.bat')
+            write_bat("soft_decoder.bat",soft_input,i)
+            os.system('soft_decoder.bat')
             
             dec_input = file_read(soft_input,float)
             dec_output = file_read(dec_file,int)
