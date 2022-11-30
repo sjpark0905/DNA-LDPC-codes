@@ -4,14 +4,14 @@ clc;
 %%
 A = sprintf('index.txt');
 [FP] = fopen(A,'r');
-test = fscanf(FP,'%d');
-test = test';
+ind = fscanf(FP,'%d');
+ind = ind';
 
-index_binary = zeros(length(test)/32,32);
+index_binary = zeros(length(ind)/32,32);
 
-for i= 1:length(test)/32
+for i= 1:length(ind)/32
     
-    index_binary(i,:) = test(32*(i-1)+1:32*i);
+    index_binary(i,:) = ind(32*(i-1)+1:32*i);
     
 end
 
