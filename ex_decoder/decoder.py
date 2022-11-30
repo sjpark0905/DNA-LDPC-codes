@@ -21,8 +21,8 @@ import random
 parser = argparse.ArgumentParser(description='Decoding of the sequenced DNA data')
 
 parser.add_argument('--rs',          type=int,   default=70000, help='Random sampling number')
-parser.add_argument('--start',     type=int,   default=3, help='Iteration start number')
-parser.add_argument('--end',     type=int,   default=3, help='Iteration end number')
+parser.add_argument('--start',     type=int,   default=0, help='Iteration start number')
+parser.add_argument('--end',     type=int,   default=10, help='Iteration end number')
 parser.add_argument('--epsil',     type=float,   default=0.03, help='Epsilon value')
 
 args = parser.parse_args()
