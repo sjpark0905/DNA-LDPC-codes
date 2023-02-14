@@ -1,6 +1,6 @@
 # DNA-LDPC-codes
 
-This repository is the implementation of *Reducing Costs in DNA Data Storage Using Soft Information-based Decoding from Variable Length Reads* (S.-J Park *et al.* (2022))
+This repository is the implementation of *Reducing Cost in DNA-based Data Storage by Sequence Analysis-aided Soft Information Decoding of Variable-Length Reads* (S.-J Park *et al.* (2023))
 
 
 Thanks to libraries we used in this work..
