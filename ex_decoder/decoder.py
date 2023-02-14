@@ -146,7 +146,7 @@ for iter_num2 in range(start,end):
     print('************** Start MSA and LLR calculation **************\n')
 
     while v1 <= len(index_DNA):
-        #print(v2)
+        
         if decimal_index[v2] not in without_error_index2:
             erase_index.append(decimal_index[v2])
             v2 += 1
@@ -311,7 +311,7 @@ for iter_num2 in range(start,end):
                         DNA_LLR[i] = 0
 
                 else:
-                    DNA_LLR[i] = (count_0-count_1)*math.log((1-epsil)/epsil)  #epsilon 값은 받도록 나중에 수정
+                    DNA_LLR[i] = (count_0-count_1)*math.log((1-epsil)/epsil) 
 
                 DNA_LR[i] = np.exp(DNA_LLR[i])
                 q_count_0 = 0
@@ -343,7 +343,6 @@ for iter_num2 in range(start,end):
                         test_len +=1
                 if test_len == len(DNA_cand):
                     num_test+=1
-                    # print('같음')
                     r_DNA_cand = DNA_cand
                     r_q_272 = q_272
                     LLR_cand = DNA2binary(r_DNA_cand)
@@ -385,8 +384,6 @@ for iter_num2 in range(start,end):
                     temp =''
                     error_q = list()
                     for num_val, val in enumerate(align_DNA):
-                        #print(num_val)
-                        
                         if num_val%3==0:
                             temp_order = val[1:]
                             
@@ -400,7 +397,7 @@ for iter_num2 in range(start,end):
                             if len(temp)!=136:
                                 error_q.append([q_272_2[int(temp_order)],temp[len(temp)-1]])
                                 temp =''
-                                # continue1+=1
+                                
                                 continue
                             r_q_272.append(q_272_2[int(temp_order)])
                             aligned_DNA.append(temp)
@@ -409,7 +406,7 @@ for iter_num2 in range(start,end):
                         if len(DNA_cand) != len(aligned_DNA):
                             error_temp.append(aligned_DNA)
                     LLR_cand = DNA2binary(aligned_DNA)
-                #print(LLR_cand)
+                
             else:
                 r_DNA_cand = DNA_cand
                 r_q_272 = q_272
@@ -491,7 +488,7 @@ for iter_num2 in range(start,end):
                         DNA_LLR[i] = 0
 
                 else:
-                    DNA_LLR[i] = (count_0-count_1)*math.log((1-epsil)/epsil)  #epsilon 값은 받도록 나중에 수정
+                    DNA_LLR[i] = (count_0-count_1)*math.log((1-epsil)/epsil)  
 
                 DNA_LR[i] = np.exp(DNA_LLR[i])
                 q_count_0 = 0
