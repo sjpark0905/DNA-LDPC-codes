@@ -43,10 +43,10 @@ rs_dec.exe:                                                       file for Reed-
 72000_RS_0.txt:                                                   randomly sampled sequencing data
 ...
 72000_RS_9.txt
-72000_Q_0.txt:                                                     quality score for randomly sampled sequencing data
+72000_Q_0.txt:                                                    quality score for randomly sampled sequencing data
 ...
 72000_Q_9.txt
-codeword_n18432_m1860_1.txt:                                       original codewords
+codeword_n18432_m1860_1.txt:                                      original codewords
 ...
 codeword_n18432_m1860_272.txt
 ```
