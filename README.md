@@ -10,6 +10,7 @@ Thanks to libraries we used in this work..
 * ***FLASH***: Library for merging paried-end reads from next-generation sequencing experiments. It is available in http://ccb.jhu.edu/software/FLASH/.  
 * ***MUSCLE***: Library for multiple sequence alignment (MSA) algorithm. It is available in https://github.com/rcedgar/muscle.  
 
+
 # Codes
 
 To run the decoder, go to the folder "ex_decoder" and use the following command.
@@ -27,9 +28,10 @@ python decoder.py --rs 72000 --start 0 --end 10 --epsil 0.02
 --epsil:    Initial epsilon value
 ```
 
-```
-#Required files for decoding
 
+# Required files for decoding
+
+```
 MUSCLE.exe:                                                       file for multiple sequence alignment
 decode_n18432_m2048_final.pchk:                                   pchk file for RS LDPC codes
 decoder.py:                                                       main decoder for DNA-based data storage
