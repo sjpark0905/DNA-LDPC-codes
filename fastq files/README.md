@@ -1,2 +1,1 @@
-
-Fastq files for Illumina sequencing data
+# Fastq files for Illumina sequencing data
