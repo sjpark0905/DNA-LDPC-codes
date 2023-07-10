@@ -18,7 +18,7 @@ This command runs 10 trials of decoding for random sampling number 72000 (From 7
 python decoder.py --rs 72000 --start 0 --end 10 --epsil 0.02
 ```
 
-```python
+```
 Parameters
 --rs: Random sampling number
 --start: Iteration starting number of randomly sampled data
