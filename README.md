@@ -40,7 +40,13 @@ def_func.py:                                                      several functi
 ldpc.exe:                                                         ldpc decoder
 pre_processing.py:                                                file for index-based decoding
 rs_dec.exe:                                                       file for Reed-Solomon code decoder
-72000_RS_0.txt, ..., 72000_RS_9.txt:                              randomly sampled sequencing data
-72000_Q_0.txt, ..., 72000_Q_9.txt:                                quality score for randomly sampled sequencing data
-codeword_n18432_m1860_1.txt, ..., codeword_n18432_m1860_272.txt   original codewords
+72000_RS_0.txt:                                                   randomly sampled sequencing data
+...
+72000_RS_9.txt
+72000_Q_0.txt                                                     quality score for randomly sampled sequencing data
+...
+72000_Q_9.txt
+codeword_n18432_m1860_1.txt                                       original codewords
+...
+codeword_n18432_m1860_272.txt
 ```
