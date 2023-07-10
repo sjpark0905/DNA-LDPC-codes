@@ -10,3 +10,8 @@ Thanks to libraries we used in this work..
 * ***FLASH***: Library for merging paried-end reads from next-generation sequencing experiments. It is available in http://ccb.jhu.edu/software/FLASH/.  
 * ***MUSCLE***: Library for multiple sequence alignment (MSA) algorithm. It is available in https://github.com/rcedgar/muscle.  
 
+# Codes
+
+```python
+python decoder.py --rs 72000 --start 0 --end 10 --epsil 0.02
+```
