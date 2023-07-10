@@ -12,6 +12,16 @@ Thanks to libraries we used in this work..
 
 # Codes
 
+To run the decoder, go to the folder "ex_decoder" and use the following command.
+This command runs 10 trials of decoding for random sampling number 72000 (From 72000_RS_0.txt to 72000_RS_9.txt)
 ```python
 python decoder.py --rs 72000 --start 0 --end 10 --epsil 0.02
+```
+
+```python
+Parameters
+--rs: Random sampling number
+--start: Iteration starting number of randomly sampled data
+--end: Iteration ending number of randomly sampled data
+--epsil: Initial epsilon value
 ```
