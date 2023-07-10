@@ -31,7 +31,7 @@ python decoder.py --rs 72000 --start 0 --end 10 --epsil 0.02
 
 # Required files for decoding
 
-These files should be in the same folder to run the decoder.
+These files must be in the same folder to run the decoder.
 ```
 MUSCLE.exe:                                                       file for multiple sequence alignment
 decode_n18432_m2048_final.pchk:                                   pchk file for RS LDPC codes
