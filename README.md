@@ -33,20 +33,20 @@ python decoder.py --rs 72000 --start 0 --end 10 --epsil 0.02
 
 These files must be in the same folder to run the decoder.
 ```
-MUSCLE.exe:                                                       file for multiple sequence alignment
-decode_n18432_m2048_final.pchk:                                   pchk file for RS LDPC codes
-decoder.py:                                                       main decoder for DNA-based data storage
-def_func.py:                                                      several functions used for the decoding
-ldpc.exe:                                                         ldpc decoder
-pre_processing.py:                                                file for index-based decoding
-rs_dec.exe:                                                       file for Reed-Solomon code decoder
-72000_RS_0.txt:                                                   randomly sampled sequencing data
+MUSCLE.exe:                          file for multiple sequence alignment
+decode_n18432_m2048_final.pchk:      pchk file for RS LDPC codes
+decoder.py:                          main decoder for DNA-based data storage
+def_func.py:                         several functions used for the decoding
+ldpc.exe:                            LDPC decoder
+pre_processing.py:                   file for index-based decoding
+rs_dec.exe:                          file for Reed-Solomon code decoder
+72000_RS_0.txt:                      randomly sampled sequencing data
 ...
 72000_RS_9.txt
-72000_Q_0.txt:                                                    quality score for randomly sampled sequencing data
+72000_Q_0.txt:                       quality score for randomly sampled sequencing data
 ...
 72000_Q_9.txt
-codeword_n18432_m1860_1.txt:                                      original codewords
+codeword_n18432_m1860_1.txt:         original codewords
 ...
 codeword_n18432_m1860_272.txt
 ```
