@@ -662,9 +662,6 @@ for iter_num2 in range(start,end):
                 fail_DNA2.append(i)
         print('Second decoding finished')
         print("Second decoding time:", time.time()-time_sec_dec,"sec\n")
-    # ===============================================================================================
-    # Third decoding calculation
-    # ===============================================================================================
     num_fail_DNA = len(fail_DNA2)
     
     
