@@ -14,7 +14,7 @@ Thanks to libraries we used in this work..
 # Codes
 
 To run the decoder, go to the folder "ex_decoder" and use the following command.
-This command runs 10 trials of decoding for random sampling number 72000 (From 72000_RS_0.txt to 72000_RS_9.txt)
+This command runs 10 trials of decoding for random sampling number 72000 (From 72000_RS_0.txt to 72000_RS_9.txt).
 ```python
 python decoder.py --rs 72000 --start 0 --end 10 --epsil 0.02
 ```
@@ -31,6 +31,7 @@ python decoder.py --rs 72000 --start 0 --end 10 --epsil 0.02
 
 # Required files for decoding
 
+These files should be in the same folder to run the decoder.
 ```
 MUSCLE.exe:                                                       file for multiple sequence alignment
 decode_n18432_m2048_final.pchk:                                   pchk file for RS LDPC codes
