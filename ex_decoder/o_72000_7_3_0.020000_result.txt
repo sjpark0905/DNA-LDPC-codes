@@ -1,0 +1,13 @@
+==============================================================================
+                               Results                                        
+==============================================================================
+Total time: 1312.993056 sec
+Random Sampling Number: 72000
+Re-decoding threshold (number): 7
+Decoding success
+
+First decoding result:   272/272
+Second decoding result:  272/272
+Second decoding iteration number:  0
+First decoding failure index: None
+Second decoding failure index: None
