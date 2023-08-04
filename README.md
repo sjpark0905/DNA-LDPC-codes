@@ -40,6 +40,7 @@ def_func.py:                         several functions used for the decoding
 ldpc.exe:                            LDPC decoder
 pre_processing.py:                   file for index-based decoding
 rs_dec.exe:                          file for Reed-Solomon code decoder
+rs_dec_init.m:                       MATLAB file for 'rs_dec.exe'
 72000_RS_0.txt:                      randomly sampled sequencing data
 ...
 72000_RS_9.txt
