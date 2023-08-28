@@ -1,0 +1,47 @@
+﻿  DNA_main.cpp
+C:\DNA\Exp2\DNA_exp2_LDPC2\ldpc\DNA_main.cpp(600,22): warning C4244: '초기화 중': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\DNA\Exp2\DNA_exp2_LDPC2\ldpc\DNA_main.cpp(843,28): warning C4477: 'fprintf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 '__int64'입니다.
+C:\DNA\Exp2\DNA_exp2_LDPC2\ldpc\DNA_main.cpp(843,28): message : 서식 문자열에서 '%lld'을(를) 사용하는 것이 좋습니다.
+C:\DNA\Exp2\DNA_exp2_LDPC2\ldpc\DNA_main.cpp(843,28): message : 서식 문자열에서 '%Id'을(를) 사용하는 것이 좋습니다.
+C:\DNA\Exp2\DNA_exp2_LDPC2\ldpc\DNA_main.cpp(843,28): message : 서식 문자열에서 '%I64d'을(를) 사용하는 것이 좋습니다.
+C:\DNA\Exp2\DNA_exp2_LDPC2\ldpc\DNA_main.cpp(982,11): warning C4477: 'printf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 '__int64'입니다.
+C:\DNA\Exp2\DNA_exp2_LDPC2\ldpc\DNA_main.cpp(982,11): message : 서식 문자열에서 '%lld'을(를) 사용하는 것이 좋습니다.
+C:\DNA\Exp2\DNA_exp2_LDPC2\ldpc\DNA_main.cpp(982,11): message : 서식 문자열에서 '%Id'을(를) 사용하는 것이 좋습니다.
+C:\DNA\Exp2\DNA_exp2_LDPC2\ldpc\DNA_main.cpp(982,11): message : 서식 문자열에서 '%I64d'을(를) 사용하는 것이 좋습니다.
+C:\DNA\Exp2\DNA_exp2_LDPC2\ldpc\DNA_main.cpp(1040,29): warning C4477: 'sprintf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 5의 형식이 '__int64'입니다.
+C:\DNA\Exp2\DNA_exp2_LDPC2\ldpc\DNA_main.cpp(1040,29): message : 서식 문자열에서 '%lld'을(를) 사용하는 것이 좋습니다.
+C:\DNA\Exp2\DNA_exp2_LDPC2\ldpc\DNA_main.cpp(1040,29): message : 서식 문자열에서 '%Id'을(를) 사용하는 것이 좋습니다.
+C:\DNA\Exp2\DNA_exp2_LDPC2\ldpc\DNA_main.cpp(1040,29): message : 서식 문자열에서 '%I64d'을(를) 사용하는 것이 좋습니다.
+C:\DNA\Exp2\DNA_exp2_LDPC2\ldpc\DNA_main.cpp(1042,29): warning C4477: 'sprintf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 5의 형식이 '__int64'입니다.
+C:\DNA\Exp2\DNA_exp2_LDPC2\ldpc\DNA_main.cpp(1042,29): message : 서식 문자열에서 '%lld'을(를) 사용하는 것이 좋습니다.
+C:\DNA\Exp2\DNA_exp2_LDPC2\ldpc\DNA_main.cpp(1042,29): message : 서식 문자열에서 '%Id'을(를) 사용하는 것이 좋습니다.
+C:\DNA\Exp2\DNA_exp2_LDPC2\ldpc\DNA_main.cpp(1042,29): message : 서식 문자열에서 '%I64d'을(를) 사용하는 것이 좋습니다.
+C:\DNA\Exp2\DNA_exp2_LDPC2\ldpc\DNA_main.cpp(1044,29): warning C4477: 'sprintf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 5의 형식이 '__int64'입니다.
+C:\DNA\Exp2\DNA_exp2_LDPC2\ldpc\DNA_main.cpp(1044,29): message : 서식 문자열에서 '%lld'을(를) 사용하는 것이 좋습니다.
+C:\DNA\Exp2\DNA_exp2_LDPC2\ldpc\DNA_main.cpp(1044,29): message : 서식 문자열에서 '%Id'을(를) 사용하는 것이 좋습니다.
+C:\DNA\Exp2\DNA_exp2_LDPC2\ldpc\DNA_main.cpp(1044,29): message : 서식 문자열에서 '%I64d'을(를) 사용하는 것이 좋습니다.
+C:\DNA\Exp2\DNA_exp2_LDPC2\ldpc\DNA_main.cpp(1046,29): warning C4477: 'sprintf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 5의 형식이 '__int64'입니다.
+C:\DNA\Exp2\DNA_exp2_LDPC2\ldpc\DNA_main.cpp(1046,29): message : 서식 문자열에서 '%lld'을(를) 사용하는 것이 좋습니다.
+C:\DNA\Exp2\DNA_exp2_LDPC2\ldpc\DNA_main.cpp(1046,29): message : 서식 문자열에서 '%Id'을(를) 사용하는 것이 좋습니다.
+C:\DNA\Exp2\DNA_exp2_LDPC2\ldpc\DNA_main.cpp(1046,29): message : 서식 문자열에서 '%I64d'을(를) 사용하는 것이 좋습니다.
+C:\DNA\Exp2\DNA_exp2_LDPC2\ldpc\DNA_main.cpp(1048,29): warning C4477: 'sprintf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 5의 형식이 '__int64'입니다.
+C:\DNA\Exp2\DNA_exp2_LDPC2\ldpc\DNA_main.cpp(1048,29): message : 서식 문자열에서 '%lld'을(를) 사용하는 것이 좋습니다.
+C:\DNA\Exp2\DNA_exp2_LDPC2\ldpc\DNA_main.cpp(1048,29): message : 서식 문자열에서 '%Id'을(를) 사용하는 것이 좋습니다.
+C:\DNA\Exp2\DNA_exp2_LDPC2\ldpc\DNA_main.cpp(1048,29): message : 서식 문자열에서 '%I64d'을(를) 사용하는 것이 좋습니다.
+C:\DNA\Exp2\DNA_exp2_LDPC2\ldpc\DNA_main.cpp(1177,9): warning C4477: 'printf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 2의 형식이 '__int64'입니다.
+C:\DNA\Exp2\DNA_exp2_LDPC2\ldpc\DNA_main.cpp(1177,9): message : 서식 문자열에서 '%lld'을(를) 사용하는 것이 좋습니다.
+C:\DNA\Exp2\DNA_exp2_LDPC2\ldpc\DNA_main.cpp(1177,9): message : 서식 문자열에서 '%Id'을(를) 사용하는 것이 좋습니다.
+C:\DNA\Exp2\DNA_exp2_LDPC2\ldpc\DNA_main.cpp(1177,9): message : 서식 문자열에서 '%I64d'을(를) 사용하는 것이 좋습니다.
+C:\DNA\Exp2\DNA_exp2_LDPC2\ldpc\DNA_main.cpp(1178,9): warning C4477: 'printf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 2의 형식이 '__int64'입니다.
+C:\DNA\Exp2\DNA_exp2_LDPC2\ldpc\DNA_main.cpp(1178,9): message : 서식 문자열에서 '%lld'을(를) 사용하는 것이 좋습니다.
+C:\DNA\Exp2\DNA_exp2_LDPC2\ldpc\DNA_main.cpp(1178,9): message : 서식 문자열에서 '%Id'을(를) 사용하는 것이 좋습니다.
+C:\DNA\Exp2\DNA_exp2_LDPC2\ldpc\DNA_main.cpp(1178,9): message : 서식 문자열에서 '%I64d'을(를) 사용하는 것이 좋습니다.
+C:\DNA\Exp2\DNA_exp2_LDPC2\ldpc\DNA_main.cpp(1179,9): warning C4477: 'printf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 2의 형식이 '__int64'입니다.
+C:\DNA\Exp2\DNA_exp2_LDPC2\ldpc\DNA_main.cpp(1179,9): message : 서식 문자열에서 '%lld'을(를) 사용하는 것이 좋습니다.
+C:\DNA\Exp2\DNA_exp2_LDPC2\ldpc\DNA_main.cpp(1179,9): message : 서식 문자열에서 '%Id'을(를) 사용하는 것이 좋습니다.
+C:\DNA\Exp2\DNA_exp2_LDPC2\ldpc\DNA_main.cpp(1179,9): message : 서식 문자열에서 '%I64d'을(를) 사용하는 것이 좋습니다.
+C:\DNA\Exp2\DNA_exp2_LDPC2\ldpc\DNA_main.cpp(1327,13): warning C4477: 'fscanf' : 서식 문자열 '%d'에 'int *' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'char *'입니다.
+C:\DNA\Exp2\DNA_exp2_LDPC2\ldpc\DNA_main.cpp(1327,13): message : 서식 문자열에서 '%hhd'을(를) 사용하는 것이 좋습니다.
+C:\DNA\Exp2\DNA_exp2_LDPC2\ldpc\DNA_main.cpp(1510,15): warning C4244: '초기화 중': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\DNA\Exp2\DNA_exp2_LDPC2\ldpc\DNA_main.cpp(979): warning C4700: 초기화되지 않은 'frame_num' 지역 변수를 사용했습니다.
+  ldpc.vcxproj -> C:\DNA\Exp2\DNA_exp2_LDPC2\x64\Release\ldpc.exe

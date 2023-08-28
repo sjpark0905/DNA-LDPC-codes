@@ -1,0 +1,30 @@
+﻿빌드 시작: 2018-09-19 오후 3:15:58
+     1>2 노드의 "C:\Users\kwak\Google 드라이브\LDPC\C code\ldpc\ldpc\ldpc.vcxproj" 프로젝트(Build 대상)입니다.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\CL.exe /c /I"C:\Program Files (x86)\Windows Kits\8.0\Lib\win8\um\x64" /I"C:\Program Files\Intel\MKL\10.2.2.025\include" /I"C:\Program Files\MPICH2\include" /Zi /nologo /W2 /WX- /Od /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc110.pdb" /Gd /TP /errorReport:prompt dec.cpp
+         dec.cpp
+     1>dec.cpp(2197): warning C4244: 'return' : 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>dec.cpp(2298): warning C4244: 'return' : 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>dec.cpp(2767): warning C4244: '=' : 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>dec.cpp(3388): warning C4244: 'return' : 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>dec.cpp(3443): warning C4244: 'return' : 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>dec.cpp(3573): warning C4244: 'return' : 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>dec.cpp(3705): warning C4244: 'return' : 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\kwak\Google 드라이브\LDPC\C code\ldpc\x64\Debug\ldpc.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\Program Files\Intel\MKL\10.2.2.025\em64t\lib" /LIBPATH:"C:\Program Files\MPICH2\lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib mkl_intel_ilp64.lib mkl_intel_lp64.lib mkl_intel_ilp64_dll.lib mkl_intel_lp64_dll.lib mkl_blacs_mpich2_ilp64.lib mkl_blacs_mpich2_lp64.lib libguide.lib mkl_core.lib mpi.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\kwak\Google 드라이브\LDPC\C code\ldpc\x64\Debug\ldpc.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\kwak\Google 드라이브\LDPC\C code\ldpc\x64\Debug\ldpc.lib" /MACHINE:X64 x64\Debug\alloc.obj
+         x64\Debug\blockio.obj
+         x64\Debug\channel.obj
+         x64\Debug\check.obj
+         x64\Debug\dec.obj
+         x64\Debug\intio.obj
+         x64\Debug\main2.obj
+         x64\Debug\mod2sparse.obj
+         x64\Debug\open.obj
+         x64\Debug\rand.obj
+         x64\Debug\rcode.obj
+         ldpc.vcxproj -> C:\Users\kwak\Google 드라이브\LDPC\C code\ldpc\x64\Debug\ldpc.exe
+     1>"C:\Users\kwak\Google 드라이브\LDPC\C code\ldpc\ldpc\ldpc.vcxproj" 프로젝트를 빌드했습니다(Build 대상).
+
+빌드했습니다.
+
+경과 시간: 00:00:00.68
