@@ -12,6 +12,7 @@ Thanks to libraries we used in this work..
 
 # Simulation environment
 We run the DNA LDPC decoder with Anaconda on Windows 10 (https://www.anaconda.com/products/distribution).
+Since .exe files are included, you have to run in Window version of anaconda.
 ```
             version
 conda       4.12.0
@@ -39,7 +40,7 @@ python decoder.py --rs 72000 --start 0 --end 10 --epsil 0.02
 
 # Required files for decoding
 
-These files must be in the same folder to run the decoder.
+These files must be in the same folder to run the decoder. All files are included in the folder "ex_decoder".
 ```
 MUSCLE.exe:                          file for multiple sequence alignment
 decode_n18432_m2048_final.pchk:      pchk file for RS LDPC codes
