@@ -10,6 +10,14 @@ Thanks to libraries we used in this work..
 * ***FLASH***: Library for merging paried-end reads from next-generation sequencing experiments. It is available in http://ccb.jhu.edu/software/FLASH/.  
 * ***MUSCLE***: Library for multiple sequence alignment (MSA) algorithm. It is available in https://github.com/rcedgar/muscle.  
 
+# Simulation environment
+We run the DNA LDPC decoder with Anaconda on Windows 10 (https://www.anaconda.com/products/distribution).
+```
+            version
+conda       4.12.0
+python      3.8.8
+```
+
 
 # Codes
 
