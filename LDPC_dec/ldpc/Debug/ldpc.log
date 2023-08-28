@@ -1,0 +1,24 @@
+﻿빌드 시작: 2014-03-17 오후 9:11:08
+     1>2 노드의 "C:\Users\user\Desktop\LDPC\C code\ldpc_보환\ldpc\ldpc.vcxproj" 프로젝트(build 대상)입니다.
+     1>InitializeBuildStatus:
+         "Debug\ldpc.unsuccessfulbuild"에 연결(touching)하고 있습니다.
+       ClCompile:
+         모든 출력이 최신 상태입니다.
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\user\Desktop\LDPC\C code\ldpc_보환\Debug\ldpc.exe" /NOLOGO /LIBPATH:"C:\Program Files\Intel\MKL\10.2.2.025\em64t\lib" /LIBPATH:"C:\Program Files\MPICH2\lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib mkl_intel_ilp64.lib mkl_intel_lp64.lib mkl_intel_ilp64_dll.lib mkl_intel_lp64_dll.lib mkl_blacs_mpich2_ilp64.lib mkl_blacs_mpich2_lp64.lib libguide.lib mkl_core.lib mpi.lib /MANIFEST /ManifestFile:"Debug\ldpc.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\user\Desktop\LDPC\C code\ldpc_보환\Debug\ldpc.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\user\Desktop\LDPC\C code\ldpc_보환\Debug\ldpc.lib" /MACHINE:X86 Debug\alloc.obj
+         Debug\blockio.obj
+         Debug\channel.obj
+         Debug\check.obj
+         Debug\dec.obj
+         Debug\intio.obj
+         Debug\main.obj
+         Debug\mod2sparse.obj
+         Debug\open.obj
+         Debug\rand.obj
+         Debug\rcode.obj
+     1>LINK : fatal error LNK1104: 'kernel32.lib' 파일을 열 수 없습니다.
+     1>"C:\Users\user\Desktop\LDPC\C code\ldpc_보환\ldpc\ldpc.vcxproj" 프로젝트를 빌드했습니다(build 대상). - 실패
+
+빌드하지 못했습니다.
+
+경과 시간: 00:00:00.12
