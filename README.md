@@ -51,3 +51,6 @@ codeword_n18432_m1860_1.txt:         original codewords
 ...
 codeword_n18432_m1860_272.txt
 ```
+The source code for creating "ldpc.exe" is in the folder "LDPC_dec".
+You can obtain the file by running the folder "LDPC_dec" by the Release configuration setting, which creates an executable file and it is intended for infal, production-ready versions of your software.
+Also, the source code for "rs_dec.exe" is in "rs_dec_init.m", and you can obtain the file by running "rs_dec_init.m" in the MATLAB.
