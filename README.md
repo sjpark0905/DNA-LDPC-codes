@@ -23,6 +23,7 @@ python      3.8.8
 # Codes
 
 To run the decoder, go to the folder "ex_decoder" and use the following command.
+
 This command runs 10 trials of decoding for random sampling number 72000 (From 72000_RS_0.txt to 72000_RS_9.txt).
 ```python
 python decoder.py --rs 72000 --start 0 --end 10 --epsil 0.02
@@ -62,4 +63,5 @@ codeword_n18432_m1860_272.txt
 ```
 The source code for creating "ldpc.exe" is in the folder "LDPC_dec".
 You can obtain the file by running the folder "LDPC_dec" by the Release configuration setting, which creates an executable file and it is intended for infal, production-ready versions of your software.
+
 Also, the source code for "rs_dec.exe" is in "rs_dec_init.m", and you can obtain the file by running "rs_dec_init.m" in the MATLAB.
