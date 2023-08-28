@@ -12,6 +12,7 @@ Thanks to libraries we used in this work..
 
 # Simulation environment
 We run the DNA LDPC decoder with Anaconda on Windows 10 (https://www.anaconda.com/products/distribution).
+
 Since .exe files are included, you have to run in Window version of anaconda.
 ```
             version
